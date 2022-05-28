@@ -2,7 +2,7 @@
 
 ## Grupo 1
 1) Felipe Sjodin - email : felipesjodin@gmail.com
-2) Soledad Peralta, email ssperaltaa@gmail.com / usuari GitHub todavia no tengo
+2) Soledad Peralta, email ssperaltaa@gmail.com / GitHub: Ssperalta
 3) nacho peña, ignacio.pena.kraus@gmail.com - Git: ignarollin3
 4) Ezequiel Giampaoli - GitHub: egiam - Email: ezegiampaoli@gmail.com
 5) Florencia Tome - florenciapodtome@gmail.com/ github flor3ncia
