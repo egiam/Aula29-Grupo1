@@ -9,5 +9,5 @@
 6) Verón Maximiliano. correo: maxi.ush.ind@gmail.com github: MaxiGithub11
 7) Josué Plevich - josueplsh@gmail.com - github: josueplevich
 8) Evelin vidal. Correo evelinyanina@gmail.com github: EvYan11
-9) Julio Cesa Vieira. Correo julioroses03@gmail.com - Github: jucevie03
+9) Julio Cesar Vieira. Correo julioroses03@gmail.com - Github: jucevie03
 10) Ignacio Parravicini. Correo parravicinignacio@gmail.com GitHub: Iparravicini 
