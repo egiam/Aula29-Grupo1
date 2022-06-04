@@ -18,11 +18,13 @@ en el Sprint. La idea de dicha reunión es centrar al equipo en lo que salió bi
 debe mejorar para la próxima iteración. De ninguna manera se centra en lo que salió mal.
 
 Artefactos de Scrum
+
 Los artefactos de Scrum representan trabajo o valor. Están diseñados para maximizar la transparencia
 de la información clave. Por lo tanto, todas las personas que los inspeccionan tienen la misma base de
 adaptación.
 Cada artefacto contiene un compromiso para garantizar que proporcione información que mejore la
 transparencia y el enfoque frente al cual se pueda medir el progreso:
+
 ● Para el Product Backlog, es el Objetivo del Producto: El Product Backlog es una lista emergente y ordenada de lo que se necesita para mejorar el producto. Es
 la única fuente del trabajo realizado por el Scrum Team. El Objetivo del Producto describe un estado futuro del producto que puede servir como un objetivo para
 que el Scrum Team planifique. El Objetivo del Producto está en el Product Backlog. El resto del Product
