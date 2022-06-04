@@ -17,7 +17,10 @@ finalizar el Sprint y tiene por objeto documentar qué ha funcionado y qué no h
 en el Sprint. La idea de dicha reunión es centrar al equipo en lo que salió bien y en lo que
 debe mejorar para la próxima iteración. De ninguna manera se centra en lo que salió mal.
 
-Artefactos de Scrum
+
+
+
+### Artefactos de Scrum
 
 Los artefactos de Scrum representan trabajo o valor. Están diseñados para maximizar la transparencia
 de la información clave. Por lo tanto, todas las personas que los inspeccionan tienen la misma base de
