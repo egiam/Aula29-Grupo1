@@ -1,8 +1,8 @@
 # Trabajo Grupal 1
 
-### Hay que identificar cuáles son las ceremonias que se usan dentro de Scrum, los artefactos, y roles. Y registrarlos dentro del readme.md y renombrarlo como ConceptosScrum.md
+## Hay que identificar cuáles son las ceremonias que se usan dentro de Scrum, los artefactos, y roles. Y registrarlos dentro del readme.md y renombrarlo como ConceptosScrum.md
 
-#### Ceremonias que se realizan a lo largo del proyecto:
+### Ceremonias que se realizan a lo largo del proyecto:
 
 - Sprint Planning Meeting (reunión de planificación del sprint). Se produce al iniciar cada
 Sprint y tiene por objetivo decidir que se va a realizar en el Sprint.
