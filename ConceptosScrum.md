@@ -2,6 +2,22 @@
 
 ## Hay que identificar cuáles son las ceremonias que se usan dentro de Scrum, los artefactos, y roles. Y registrarlos dentro del readme.md y renombrarlo como ConceptosScrum.md
 
+## Qué es Scrum? 
+
+- Es un enfoque ágil para la gestión de un proyecto, un marco de trabajo que utiliza procesos iterativos/incrementales. 
+- Se enfoca en los resultados y compromisos por parte de quienes conforman el grupo de trabajo. 
+- Su base es opuesta a lo que propone la metodología en cascada. 
+
+
+### Roles en SCRUM
+
+- Product Owner: es el responsable de definir y priorizar temas y objetivos con criterio de aceptación, el QUÉ. 
+- Scrum Team o Equipo: los integrantes identifican y hacen el CÓMO. 
+- Scrum Master o Facilitador: es uno de los integrantes del grupo, no es el líder pero es quien ayuda a pensar a todos juntos para obtener un mejor resultado. 
+
+
+
+
 ### Ceremonias que se realizan a lo largo del proyecto:
 
 - Sprint Planning Meeting (reunión de planificación del sprint). Se produce al iniciar cada
@@ -39,5 +55,4 @@ Backlog seleccionados para el Sprint (qué), así como un plan de acción para e
 
 ● Para el Increment es la Definición de Terminado: Cada Increment se suma a todos
 los Increments anteriores y se verifica minuciosamente, lo que garantiza que todos los Increments
-funcionen juntos. Para proporcionar valor, el Increment debe ser utilizable. La Definición de Terminado es una descripción formal del estado del Increment cuando cumple con las medidas de calidad requeridas para el producto. En el momento en que un elemento del Product Backlog cumple con la Definición de Terminado, nace un Increment
-
+funcionen juntos. Para proporcionar valor, el Increment debe ser utilizable. La Definición de Terminado es una descripción formal del estado del Increment cuando cumple con las medidas de calidad requeridas para el producto. En el momento en que un elemento del Product Backlog cumple con la Definición de Terminado, nace un Increment.
