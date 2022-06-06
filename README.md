@@ -12,4 +12,4 @@
 9) Julio Cesa Vieira. Correo julioroses03@gmail.com - Github: jucevie03
 10) Ignacio Parravicini. Correo parravicinignacio@gmail.com GitHub: Iparravicini 
 
-PROBANDO SI PUEDO PUSHEAR
+En estos documentos vamos a generar un archivo de estudio. 
