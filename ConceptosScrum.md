@@ -34,6 +34,11 @@ en el Sprint. La idea de dicha reunión es centrar al equipo en lo que salió bi
 debe mejorar para la próxima iteración. De ninguna manera se centra en lo que salió mal.
 
 
+La planificación en Scrum:
+Hay que conseguir priorizar qué temas se van a trabajar primero, en qué orden y porqué. Cada una de las personas que componen el equipo deberá comprender, escuchar, respetar y sentir curiosidad, buscándose la responsabilidad conjunta y el talento colectivo, asumiendo que los resultados son el producto del trabajo en equipo.
+Los equipos se auto ‐gestionan. Cada integrante es el líder de su propio aprendizaje.
+Todos los miembros del equipo pueden probar sus ideas en lugar de esperar a que sea otro compañero el que las tome por él.
+Son los integrantes quienes toman sus propias decisiones autodefiniendo como van a alcanzar los objetivos.
 
 
 ### Artefactos de Scrum
@@ -56,3 +61,5 @@ Backlog seleccionados para el Sprint (qué), así como un plan de acción para e
 ● Para el Increment es la Definición de Terminado: Cada Increment se suma a todos
 los Increments anteriores y se verifica minuciosamente, lo que garantiza que todos los Increments
 funcionen juntos. Para proporcionar valor, el Increment debe ser utilizable. La Definición de Terminado es una descripción formal del estado del Increment cuando cumple con las medidas de calidad requeridas para el producto. En el momento en que un elemento del Product Backlog cumple con la Definición de Terminado, nace un Increment.
+
+
