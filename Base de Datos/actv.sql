@@ -20,7 +20,7 @@ create table if not exists Perro (
     id_perro int not null,
     nombrePerro varchar(50) not null,
     razaPerro varchar(50) not null,
-    fechaNacPerro date not null,
+    fechaNacPerro date,
     sexoPerro varchar(1) not null,
     DNI int not null,
     primary key (id_perro),
@@ -32,7 +32,7 @@ create table if not exists Historial (
     id_perro int not null,
     fechaHistorial date not null,
     descripcionHistorial varchar(150) not null,
-    montoHistorial money not null,
+    montoHistorial int not null,
     primary key (id_historial),
     foreign key (id_perro) references Perro(id_perro)
 );
@@ -42,14 +42,22 @@ create table if not exists Historial (
 --     Realice la consulta correspondiente para crear la tabla Perro, teniendo en cuenta sus claves foráneas y primarias.
 
 --     Inserte en la tabla correspondiente un nuevo animal (perro) como paciente y el dueño asociado a ese animal.
+Insert into Dueno values(12345678, "Rodolfo", "Marquez", "121212", "rodolfoMarquez@gmail.com","Don Bosco 123");
+Insert into Perro values(1,"Juan","Labrador","16/12/2015", "M", 12345678);
 
 --     Borre un animal que ya no va a ser atendido. Para ello consulte antes en el historial, algún animal que ya no sea atendido desde hace mucho tiempo.
+Delete from Perro where month(getdate() - fechaHistorial) > 12;
 
 --     Actualice la fecha de nacimiento de algún animal (perro) que usted considere.
+update Perro 
+set fechaNacPerro = "12/21/2019"
+where id_perro = 1;
 
 --     Realice una consulta multitabla que arroje el nombre de todos los perros cuyos dueños se llaman Pedro
+select p.* from Perros p join Dueno d on p.DNI = d.DNI where nombreDueno = "Pedro"
 
 --     Obtener todos los perros que asistieron a la peluquería en 2022
+
 
 --     Obtener los ingresos percibidos en Julio del 2022
 
