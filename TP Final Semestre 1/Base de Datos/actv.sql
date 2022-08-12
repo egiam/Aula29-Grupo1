@@ -60,10 +60,14 @@ select p.* from Perros p join Dueno d on p.DNI = d.DNI where nombreDueno = "Pedr
 
 
 --     Obtener los ingresos percibidos en Julio del 2022
+select sum(montoHistorial) from Historial where year(fechaHistorial) = 2022 group by year(fechaHistorial)
 
 --     Insertar un nuevo registro en la tabla historial de un perro cuyo ID Perro es igual a 10.
+insert into perro values (10, "Lili","Obejero Aleman","16/12/2015", "F", 12341234)
+insert into historial values(1,10,'16/12/2022',"Cosas",1200)
 
 --     Escriba una consulta que permita actualizar la dirección de un dueño. Su nueva dirección es Libertad 123
+update Dueno set direcciónDueno = "Libertad 123" where DNI = 12345678
 
 --     Vaciar la tabla historial y resetear el contador del campo ID.
 
