@@ -8,20 +8,20 @@ use PeluqueriaCanina;
 
 create table if not exists Dueno (
     DNI int not null auto_increment,
-    nombreDueno varchar(50) not null,
-    apellidoDueno varchar(50) not null,
-    telefonoDueno varchar(10) not null,
-    emailDueno varchar(50) not null,
-    direccionDueno varchar(150) not null,
+    nombreDueno varchar(50),
+    apellidoDueno varchar(50),
+    telefonoDueno varchar(10),
+    emailDueno varchar(50),
+    direccionDueno varchar(150),
     primary key (DNI)
 );
 
 create table if not exists Perro (
     id_perro int not null,
-    nombrePerro varchar(50) not null,
-    razaPerro varchar(50) not null,
-    fechaNacPerro date,
-    sexoPerro varchar(1) not null,
+    nombrePerro varchar(50),
+    razaPerro varchar(50),
+    fechaNacPerro datetime,
+    sexoPerro varchar(1)
     DNI int not null,
     primary key (id_perro),
     foreign key (DNI) references Dueno(DNI)
@@ -30,9 +30,9 @@ create table if not exists Perro (
 create table if not exists Historial (
     id_historial int not null auto_increment,
     id_perro int not null,
-    fechaHistorial date not null,
-    descripcionHistorial varchar(150) not null,
-    montoHistorial int not null,
+    fechaHistorial datetime,
+    descripcionHistorial varchar(150),
+    montoHistorial int,
     primary key (id_historial),
     foreign key (id_perro) references Perro(id_perro)
 );
@@ -50,7 +50,7 @@ Delete from Perro where month(getdate() - fechaHistorial) > 12;
 
 --     Actualice la fecha de nacimiento de algún animal (perro) que usted considere.
 update Perro 
-set fechaNacPerro = "12/21/2019"
+set fechaNacPerro = "12/9/2019"
 where id_perro = 1;
 
 --     Realice una consulta multitabla que arroje el nombre de todos los perros cuyos dueños se llaman Pedro
