@@ -1,0 +1,1 @@
+SELECT * FROM peluqueria_canina.dueno;
