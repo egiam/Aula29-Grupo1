@@ -8,20 +8,20 @@ use PeluqueriaCanina;
 
 create table if not exists Dueno (
     DNI int not null auto_increment,
-    nombreDueno varchar(50),
-    apellidoDueno varchar(50),
-    telefonoDueno varchar(10),
-    emailDueno varchar(50),
-    direccionDueno varchar(150),
+    nombre varchar(50),
+    apellido varchar(50),
+    telefono varchar(10),
+    email varchar(50),
+    direccion varchar(150),
     primary key (DNI)
 );
 
 create table if not exists Perro (
     id_perro int not null,
-    nombrePerro varchar(50),
-    razaPerro varchar(50),
-    fechaNacPerro datetime,
-    sexoPerro varchar(1)
+    nombre varchar(50),
+    raza varchar(50),
+    fechaNac datetime,
+    sexo varchar(1)
     DNI int not null,
     primary key (id_perro),
     foreign key (DNI) references Dueno(DNI)
@@ -30,49 +30,46 @@ create table if not exists Perro (
 create table if not exists Historial (
     id_historial int not null auto_increment,
     id_perro int not null,
-    fechaHistorial datetime,
-    descripcionHistorial varchar(150),
-    montoHistorial int,
+    fecha datetime,
+    descripcion varchar(150),
+    monto int,
     primary key (id_historial),
     foreign key (id_perro) references Perro(id_perro)
 );
 
 
 
---     Realice la consulta correspondiente para crear la tabla Perro, teniendo en cuenta sus claves foráneas y primarias.
+--  1   Realice la consulta correspondiente para crear la tabla Perro, teniendo en cuenta sus claves foráneas y primarias.
 
---     Inserte en la tabla correspondiente un nuevo animal (perro) como paciente y el dueño asociado a ese animal.
+--   2  Inserte en la tabla correspondiente un nuevo animal (perro) como paciente y el dueño asociado a ese animal.
 Insert into Dueno values(12345678, "Rodolfo", "Marquez", "121212", "rodolfoMarquez@gmail.com","Don Bosco 123");
 Insert into Perro values(1,"Juan","Labrador","16/12/2015", "M", 12345678);
 
---     Borre un animal que ya no va a ser atendido. Para ello consulte antes en el historial, algún animal que ya no sea atendido desde hace mucho tiempo.
-Delete from Perro where month(getdate() - fechaHistorial) > 12;
+--   3  Borre un animal que ya no va a ser atendido. Para ello consulte antes en el historial, algún animal que ya no sea atendido desde hace mucho tiempo.
+Delete from Perro where month(getdate() - fecha) > 12;
 
---     Actualice la fecha de nacimiento de algún animal (perro) que usted considere.
+--  4   Actualice la fecha de nacimiento de algún animal (perro) que usted considere.
 update Perro 
-set fechaNacPerro = "12/9/2019"
+set fechaNac = "12/9/2019"
 where id_perro = 1;
 
---     Realice una consulta multitabla que arroje el nombre de todos los perros cuyos dueños se llaman Pedro
-select p.* from Perros p join Dueno d on p.DNI = d.DNI where nombreDueno = "Pedro"
+--  5   Realice una consulta multitabla que arroje el nombre de todos los perros cuyos dueños se llaman Pedro
+select nombre from Perro, Dueno
+where Dueno.nombre = "Pedro" and Perro.DNI = Dueno.DNI;
 
---     Obtener todos los perros que asistieron a la peluquería en 2022
+--  7   Obtener los ingresos percibidos en Julio del 2022
+select sum(monto) from Historial
+where month(fecha) = 7 and year(fecha) = 2022;
 
+--  9   Escriba una consulta que permita actualizar la dirección de un dueño. Su nueva dirección es Libertad 123
+update Dueno set direccion = "Libertad 123" where DNI = 12345678;
 
---     Obtener los ingresos percibidos en Julio del 2022
-select sum(montoHistorial) from Historial where year(fechaHistorial) = 2022 group by year(fechaHistorial)
+--  10   Vaciar la tabla historial y resetear el contador del campo ID.
+truncate table historial;
+alter table historial auto_increment = 1;
 
---     Insertar un nuevo registro en la tabla historial de un perro cuyo ID Perro es igual a 10.
-insert into perro values (10, "Lili","Obejero Aleman","16/12/2015", "F", 12341234)
-insert into historial values(1,10,'16/12/2022',"Cosas",1200)
-
---     Escriba una consulta que permita actualizar la dirección de un dueño. Su nueva dirección es Libertad 123
-update Dueno set direcciónDueno = "Libertad 123" where DNI = 12345678
-
---     Vaciar la tabla historial y resetear el contador del campo ID.
-
---     Obtener todos los dueños que tengan perros de menos de 5 años de edad que no hayan visitado la peluquería en el año 2022.
-
---     Obtener todos los perros de sexo “Macho” nacidos entre 2020 y 2022.
+--  11   Obtener todos los dueños que tengan perros de menos de 5 años de edad que no hayan visitado la peluquería en el año 2022.
+select nombre from Dueno, Perro
+where Dueno.DNI = Perro.DNI and year(getdate() - Perro.fechaNac) < 5 and year(getdate() - Historial.fecha) < 2022;
 
 -- El archivo debe ser subido a la rama de la persona que creó el código, ya que los docentes verificaremos la participación por el historial.
