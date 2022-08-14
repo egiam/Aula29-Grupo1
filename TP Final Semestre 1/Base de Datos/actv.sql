@@ -61,9 +61,6 @@ where Dueno.nombre = "Pedro" and Perro.DNI = Dueno.DNI;
 select sum(monto) from Historial
 where month(fecha) = 7 and year(fecha) = 2022;
 
---  9   Escriba una consulta que permita actualizar la dirección de un dueño. Su nueva dirección es Libertad 123
-update Dueno set direccion = "Libertad 123" where DNI = 12345678;
-
 --  10   Vaciar la tabla historial y resetear el contador del campo ID.
 truncate table historial;
 alter table historial auto_increment = 1;
