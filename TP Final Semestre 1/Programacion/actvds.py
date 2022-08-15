@@ -1,17 +1,4 @@
 
-# 4)      Crear un lista en Python denominado “Perro2” que contenga los siguientes valores:
-
-#       14,  Fido,  12/12/2012 , Macho, 23546987
-
-Perro2 = [14, "Fido", "12/12/2012", "Macho", 23546987]
-
-# Recorrer la lista “Perro” con un bucle y mostrar sus elementos por pantalla , comenzando desde el último hasta el primero.
-
-def Recorrer(var):
-    for x in range(len(var)):
-        print(var[len(var)-1-x])
-
-Recorrer(Perro)
 
 
 # 5)      Crear una tupla en Python con el nombre de “Historial” la cual contenga los siguientes valores:

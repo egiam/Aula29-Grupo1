@@ -41,10 +41,6 @@ create table if not exists Historial (
 
 --  1   Realice la consulta correspondiente para crear la tabla Perro, teniendo en cuenta sus claves foráneas y primarias.
 
---   2  Inserte en la tabla correspondiente un nuevo animal (perro) como paciente y el dueño asociado a ese animal.
-Insert into Dueno values(12345678, "Rodolfo", "Marquez", "121212", "rodolfoMarquez@gmail.com","Don Bosco 123");
-Insert into Perro values(1,"Juan","Labrador","16/12/2015", "M", 12345678);
-
 --   3  Borre un animal que ya no va a ser atendido. Para ello consulte antes en el historial, algún animal que ya no sea atendido desde hace mucho tiempo.
 Delete from Perro where month(getdate() - fecha) > 12;
 
