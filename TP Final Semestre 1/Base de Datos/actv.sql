@@ -38,7 +38,6 @@ create table if not exists Historial (
 );
 
 
-
 --  1   Realice la consulta correspondiente para crear la tabla Perro, teniendo en cuenta sus claves foráneas y primarias.
 
 --   3  Borre un animal que ya no va a ser atendido. Para ello consulte antes en el historial, algún animal que ya no sea atendido desde hace mucho tiempo.
